@@ -52,3 +52,11 @@ footer {
 .displayNone {
     display: none;
 }
+
+/* exo 3 */
+
+.styleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

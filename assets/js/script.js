@@ -1,25 +1,15 @@
 // exo 1
+
 const mainBtn = document.getElementById("mainBtn");
 console.log(mainBtn);
-const mainContainer = document.getElementById("mainElement")
-console.log(mainContainer);
+const mainElement = document.getElementById("mainElement")
+console.log(mainElement);
 
 function redColor() {
-    mainContainer.classList.toggle("redColor")
+    mainElement.classList.toggle("redColor")
 }
 
 mainBtn.addEventListener("click", redColor)
-
-// function white() {
-//     main.classList.add(classWhite);
-// }
-
-// function redOrWhite() {
-//     main.classList.toggle("white");
-// }
-
-// redOrWhite()
-// mainBtn.addEventListener("click", redOrWhite)
 
 // exo 2
 
@@ -34,4 +24,23 @@ function hereNotHere() {
 }
 
 mainBtn2.addEventListener("click", hereNotHere);
+
+// exo 3
+// chemin d'accès pour id => btnStyle de button
+const sendButton = document.getElementById("sendButton");
+console.log(sendButton);
+// chemin d'accès pour id =>age de l'input
+let age = document.getElementById("age");
+// console.log(age);
+
+function getValue(){
+    // recuperer la valeur (value), dans l'input
+    let value = age.value
+    console.log(value);
+}
+// si on appuie sur le bouton btnStyle, on récupère l'information (la valeur) contenu dans l'input (age) 
+sendButton.addEventListener("click", getValue);
+
+
+
 
