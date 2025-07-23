@@ -37,6 +37,8 @@ function getValue(){
     // recuperer la valeur (value), dans l'input
     let value = age.value
     console.log(value);
+    // alert qui donne aussi la valeur de age
+    alert(value)
 }
 // si on appuie sur le bouton btnStyle, on récupère l'information (la valeur) contenu dans l'input (age) 
 sendButton.addEventListener("click", getValue);
