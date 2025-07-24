@@ -13,10 +13,13 @@ footer {
     padding: 2rem 0;
     background-color: black;
     color: white;
+    height: 20vh;
 }
 
 /* ------------------Main---------------------- */
-
+main {
+    height: 60vh;
+}
 /* exo 1 */
 .mainContainer {
     display: flex;
@@ -47,6 +50,7 @@ footer {
     align-items: center;
     flex-direction: column;
     font-size: 1.5rem;
+
 }
 
 .displayNone {

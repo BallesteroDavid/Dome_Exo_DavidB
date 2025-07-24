@@ -33,16 +33,29 @@ console.log(sendButton);
 let age = document.getElementById("age");
 // console.log(age);
 
-function getValue(){
-    // recuperer la valeur (value), dans l'input
-    let value = age.value
-    console.log(value);
-    // alert qui donne aussi la valeur de age
-    alert(value)
-}
 // si on appuie sur le bouton btnStyle, on récupère l'information (la valeur) contenu dans l'input (age) 
+
+function getValue(){
+    // je recupère la valeur dans mon input
+    const age = document.getElementById('age').value;
+    // je génère un élément span
+    const span = document.createElement('span');
+    // déclare une variable type (vide)
+    let type;
+    // si age est sup ou égal à 18
+    if (age >= 18 ) {
+        // je rappel ma var type pour lui enrengistré une string
+        type = "majeur";
+        // si on rentre pas dans la 1ère condition on éxecute le else    //  
+    }else{
+        // je rappel ma var type pour lui enrengistré une string
+        type = "mineur";
+    }
+    // genere un element html qui contient le message "A [age], tu es [mineur/adult]."
+    // je modifie textContent de mon élément span que j'ai généré précedement
+    span.textContent = "A "+ age + " ans, tu es " + type + ".";
+    // dans mon je cible le document html ou injecter mon element span
+    document.getElementById("alerteContainer").appendChild(span);
+}
+
 sendButton.addEventListener("click", getValue);
-
-
-
-
